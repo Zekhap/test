@@ -8,10 +8,10 @@ function buildConfig() {
         },
         "port": 3000,
         "db": {
-            "host": "81.231.10.41",
-            "user": "u6_0RV0RaeBjL",
-            "pass": "mjbi6Su^@@h56.ksbNW48st!",
-            "database": "s6_ForgottenNetwork",
+            "host": "123",
+            "user": "123",
+            "pass": "123",
+            "database": "123",
             "dialect": "mysql",
             "pool": {
                 "max": 5,
