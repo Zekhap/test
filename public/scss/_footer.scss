@@ -1,0 +1,16 @@
+app-footer {
+    display: flex;
+    flex: 0 0 $footer-height;
+    align-items: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background-color: $footer-background;
+    border-top: $border-size solid $border-color;
+    color: #8a8d93;
+    padding: 0px 20px;
+}

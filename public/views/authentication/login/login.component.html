@@ -1,0 +1,51 @@
+<div class="no-gutters justify-content-center row">
+    <div class="card col-md-6 col-lg-6">
+        <div class="p-4 p-sm-5">
+
+            <h5 class="text-center text-muted font-weight-normal mb-4">Login to Your Account</h5>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input formControlName="username" placeholder="Username" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-key"></i>
+                            </span>
+                        </div>
+                        <input formControlName="password" placeholder="Password" type="password" class="form-control" >
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-checkbox custom-control">
+                        <input type="checkbox" id="exampleCustomCheckbox12" class="custom-control-input">
+                        <label class="custom-control-label" for="exampleCustomCheckbox12">Remember Me!</label>
+                    </div>
+                </div>
+                <div class="border-top pt-3 mt-3">
+                    <button type="submit" class="btn btn-success mr-2 btn btn-secondary">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer py-3 px-4 px-sm-5">
+            <div class="text-center text-muted">
+                Beep boop? <a href="javascript:void(0)">Zwag</a>
+            </div>
+        </div>
+    </div>
+</div>

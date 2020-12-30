@@ -1,0 +1,38 @@
+$sidebar-width: 256px;
+$sidebar-compact-width: 65px;
+$header-height: 56px;
+
+
+$border-size: 2px;
+$border-color: #34373d;
+
+
+$background-color: #323743;
+$header-background-color: #20222a;
+$brand-background-color: #ff7676;
+$sidebar-background-color: #20222a;
+$footer-background: #272b34;
+$footer-height: 50px;
+
+
+$zindex-dropdown:        1000 !default;
+$zindex-sticky:          1020 !default;
+$zindex-fixed:           1030 !default;
+$zindex-modal-backdrop:  1040 !default;
+$zindex-modal:           1050 !default;
+$zindex-popover:         1060 !default;
+$zindex-tooltip:         1070 !default;
+$zindex-toaster:         1080 !default;
+
+
+//Border width: -1px;
+
+$input-padding-x: .375rem;
+$input-padding-y: .75rem;
+$input-font-size: .875rem;
+$font-weight-normal: 400;
+$input-line-height: 1.5;
+$input-group-addon-color: #525f7f;
+$input-group-addon-bg: #f7fafc;
+$input-group-addon-border-color: #e9ecef;
+$input-border-radius: 2px;

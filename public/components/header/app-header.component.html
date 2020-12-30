@@ -1,0 +1,10 @@
+<ul class="float-left">
+    <li><a>Dashboard</a></li>
+    <li><a>Users</a></li>
+    <li><a>Settings</a></li>
+</ul>
+<ul class="ml-auto float-right">
+    <li *ngIf="!user" class="nav-item"><a routerLink="/login" class="d-none d-md-flex align-items-center">Login</a></li>
+    <li *ngIf="user" class="nav-item"><a (click)="logout()" class="d-none d-md-flex align-items-center">Logout</a></li>
+    <li *ngIf="user" class="nav-item"><a class="d-none d-md-flex align-items-center">Welcome, {{ user.username }}</a></li>
+</ul>
